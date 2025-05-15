@@ -45,6 +45,7 @@
     }
 
     .pictorial-news-section img {
+	  align-items: center;
       width: 100%;
       border-radius: 10px;
       margin-bottom: 15px;
