@@ -1,71 +1,98 @@
-	* {
-      box-sizing: border-box;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-    }
+body {
+    background-color: #f5f5f5; /* provided body-background-color */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-    header {
-      background-color: #011e29;
-      padding: 20px;
-      text-align: center;
-      font-size: 30px;
-      color: white;
-    }
+.header {
+    background-color: #011e29; /* provided header-background-color */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
 
-    section {
-      display: flex;
-      justify-content: space-around;
-      margin: 40px 20px;
-      gap: 20px;
-    }
+.header h2 {
+    margin: 0;
+    font-size: 2.2rem;
+}
 
-    .latest-news-section, 
-    .pictorial-news-section, 
-    .main-article {
-      background-color: white;
-      padding: 20px;
-      border-radius: 20px;
-      width: 30%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    .latest-news-section ul {
-      list-style: disc;
-      padding-left: 20px;
-    }
+/* Base styles for news sections */
+.latest-news-section,
+.main-article-section,
+.pictorial-news-section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+}
 
-    .latest-news-section h4, 
-    .pictorial-news-section h2,
-    .main-article h2 {
-      text-align: center;
-    }
+/* Latest News Section */
+.latest-news-section {
+    flex: 1; /* width approx 25% */
+}
 
-    .pictorial-news-section img {
-	  align-items: center;
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
+.latest-news-section h3 {
+    text-align: center;
+    margin-top: 0;
+}
 
-    .main-article p {
-      text-align: center;
-      line-height: 1.6;
-    }
+.latest-news-section ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 20px 0 0 20px;
+}
 
-    /* @media (max-width: 768px) {
-      section {
-        flex-direction: column;
-        align-items: center;
-      } */
+.latest-news-section li {
+    margin-bottom: 10px;
+}
 
-      .latest-news-section, 
-      .pictorial-news-section, 
-      .main-article {
-        width: 90%;
-      }
-    }
+/* Main Article Section */
+.main-article-section {
+    flex: 2; /* width approx 50% */
+}
+
+.main-article-section h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.main-article-section p {
+    text-align: center;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Pictorial News Section */
+.pictorial-news-section {
+    flex: 1; /* width approx 25% */
+    text-align: center; /* Content alignment as specified in instruction 4 */
+}
+
+.pictorial-news-section h3 {
+    margin-top: 0;
+}
+
+/* Images in pictorial section */
+.pictorial-news-section img {
+    width: 90%; /* Sized appropriately to fit section with centring */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: inline-block; /* Inline-block allows text-align: center on parent to work */
+}
+
+.pictorial-news-section img:last-child {
+    margin-bottom: 0;
+}
