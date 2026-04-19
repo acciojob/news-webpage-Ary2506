@@ -3,21 +3,24 @@
 }
 
 body {
-    background-color: #f5f5f5; /* provided body-background-color */
+    background-color: #f5f5f5;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-.header {
-    background-color: #011e29; /* provided header-background-color */
-    color: white;
+/* Header style with center alignment as per instruction 2 */
+header, .header {
     text-align: center;
-    padding: 30px 0;
+    background-color: #011e29;
+    color: white;
+    padding: 30px;
+    width: 100%;
 }
 
 .header h2 {
     margin: 0;
     font-size: 2.2rem;
+    text-align: center;
 }
 
 .container {
@@ -30,7 +33,7 @@ body {
     margin: 0 auto;
 }
 
-/* Base styles for news sections */
+/* Section styling */
 .latest-news-section,
 .main-article-section,
 .pictorial-news-section {
@@ -41,7 +44,7 @@ body {
 
 /* Latest News Section */
 .latest-news-section {
-    flex: 1; /* width approx 25% */
+    flex: 1;
 }
 
 .latest-news-section h3 {
@@ -61,7 +64,7 @@ body {
 
 /* Main Article Section */
 .main-article-section {
-    flex: 2; /* width approx 50% */
+    flex: 2;
 }
 
 .main-article-section h2 {
@@ -75,24 +78,25 @@ body {
     color: #444;
 }
 
-/* Pictorial News Section */
+/* Pictorial News Section with center alignment as per instruction 4 */
 .pictorial-news-section {
-    flex: 1; /* width approx 25% */
-    text-align: center; /* Content alignment as specified in instruction 4 */
+    flex: 1;
+    text-align: center;
 }
 
 .pictorial-news-section h3 {
     margin-top: 0;
+    text-align: center;
 }
 
-/* Images in pictorial section */
 .pictorial-news-section img {
-    width: 90%; /* Sized appropriately to fit section with centring */
+    width: 90%;
     margin-bottom: 20px;
     border-radius: 5px;
-    display: inline-block; /* Inline-block allows text-align: center on parent to work */
+    display: inline-block;
 }
 
 .pictorial-news-section img:last-child {
     margin-bottom: 0;
 }
+
