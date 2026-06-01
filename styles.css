@@ -7,65 +7,56 @@
 body {
   background-color: #f5f5f5;
   font-family: Arial, sans-serif;
-  color: #222;
 }
 
-/* HEADER */
+/* Header */
 .header {
   background-color: #011e29;
+  color: white;
+  padding: 20px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 20px;
 }
 
 .header h1 {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: bold;
+  color: white;
 }
 
-/* CONTENT LAYOUT */
+/* Layout */
 .content-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 20px;
-  max-width: 1200px;
-  margin: 30px auto;
-  padding: 0 20px;
-}
-
-/* COMMON CARD STYLE */
-.latest-news-section,
-.main-article-section,
-.pictorial-news-section {
-  background: #fff;
-  border-radius: 8px;
   padding: 20px;
 }
 
-/* LATEST NEWS */
-.latest-news-section {
-  width: 220px;
+/* Common Card Styles */
+.latest-news-section,
+.main-article-section,
+.pictorial-news-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.latest-news-section h3 {
-  margin-bottom: 10px;
+/* Latest News */
+.latest-news-section {
+  width: 25%;
+  text-align: center;
 }
 
 .latest-news-section ul {
+  margin-top: 10px;
   padding-left: 20px;
+  text-align: left;
 }
 
-.latest-news-section li {
-  margin-bottom: 8px;
-}
-
-/* MAIN ARTICLE */
+/* Main Article */
 .main-article-section {
-  flex: 1;
+  width: 50%;
   text-align: center;
 }
 
@@ -77,13 +68,15 @@ body {
   line-height: 1.6;
 }
 
-/* PICTORIAL NEWS */
+/* Pictorial News */
 .pictorial-news-section {
-  width: 240px;
+  width: 25%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   text-align: center;
 }
 
@@ -94,7 +87,7 @@ body {
 .pictorial-news-section img {
   width: 100%;
   margin-bottom: 10px;
-  display: block;
+  border-radius: 5px;
 }
 
 .pictorial-news-section img:last-child {
