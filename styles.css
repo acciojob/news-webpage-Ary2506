@@ -5,87 +5,94 @@
 body {
     background-color: #f5f5f5;
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
-/* 2. Header alignment, padding and color */
+/* Header: center alignment, padding, background color */
 .header {
     background-color: #011e29;
-    padding: 30px;
     text-align: center;
+    padding: 20px;
     color: white;
 }
 
 .header h1 {
     margin: 0;
-    text-align: center;
+    font-size: 2rem;
 }
 
+/* Flexbox container */
 .container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Crucial visual fix: prevents heights from stretching to match target image */
-    padding: 40px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 30px;
 }
 
-/* 3. Latest News: class, provided color, padding, and width */
+/* Latest News Section: background color, padding, width */
 .latest-news-section {
     background-color: #ffffff;
     padding: 20px;
-    flex-basis: 25%;
     width: 25%;
-    border-radius: 15px;
-    text-align: center; /* Centers the heading and list block */
+    border-radius: 12px;
 }
 
 .latest-news-section h3 {
-    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .latest-news-section ul {
-    list-style-position: inside;
-    padding: 0;
-    display: inline-block; /* visual fix: keeps the list centered as a block */
-    text-align: left; /* visual fix: keeps individual bullets left-aligned */
+    list-style-type: disc;
+    padding-left: 30px;
 }
 
-/* Main content styling */
+.latest-news-section ul li {
+    margin-bottom: 8px;
+}
+
+/* Main Article Section */
 .main-article-section {
     background-color: #ffffff;
     padding: 20px;
-    flex-basis: 50%;
-    width: 50%;
-    margin: 0 20px;
-    border-radius: 15px;
+    width: 40%;
+    border-radius: 12px;
+    text-align: center;
 }
 
 .main-article-section h2 {
-    text-align: center;
+    margin-bottom: 15px;
 }
 
 .main-article-section p {
-    text-align: center;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: #333;
 }
 
-/* 4. Pictorial News: class, alignment, and properties as appropriate */
+/* Pictorial News Section: background-color, padding, width, text-align, border-radius */
 .pictorial-news-section {
     background-color: #ffffff;
     padding: 20px;
-    flex-basis: 25%;
     width: 25%;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 .pictorial-news-section h3 {
-    text-align: center;
+    font-weight: bold;
+    margin-bottom: 12px;
 }
 
+/* Dynamic image height: fits all 3 images in viewport without scroll */
 .pictorial-news-section img {
     width: 100%;
-    margin-bottom: 20px;
-    display: inline-block;
+    height: calc((100vh - 260px) / 3);
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .pictorial-news-section img:last-child {
