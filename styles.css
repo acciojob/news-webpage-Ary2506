@@ -16,95 +16,76 @@ body {
     color: white;
 }
 
-.header h2 {
+.header h1 {
     margin: 0;
     text-align: center;
-    font-size: 32px;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Crucial: prevents height stretching to match target image */
+    align-items: flex-start; /* Crucial visual fix: prevents heights from stretching to match target image */
     padding: 40px;
-    gap: 30px; /* Elegant gap between columns */
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 /* 3. Latest News: class, provided color, padding, and width */
 .latest-news-section {
     background-color: #ffffff;
-    padding: 20px 25px 30px 25px;
+    padding: 20px;
+    flex-basis: 25%;
     width: 25%;
-    border-radius: 20px;
-    text-align: center; /* Centers h3 and centers the inline-block ul */
+    border-radius: 15px;
+    text-align: center; /* Centers the heading and list block */
 }
 
 .latest-news-section h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 20px;
+    text-align: center;
 }
 
 .latest-news-section ul {
-    display: inline-block; /* Centered relative to the card */
-    text-align: left; /* Left-aligns bullets and text inside the block */
-    padding-left: 20px;
-    margin: 0;
-}
-
-.latest-news-section li {
-    font-size: 16px;
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-
-.latest-news-section li:last-child {
-    margin-bottom: 0;
+    list-style-position: inside;
+    padding: 0;
+    display: inline-block; /* visual fix: keeps the list centered as a block */
+    text-align: left; /* visual fix: keeps individual bullets left-aligned */
 }
 
 /* Main content styling */
 .main-article-section {
     background-color: #ffffff;
-    padding: 20px 30px 30px 30px;
+    padding: 20px;
+    flex-basis: 50%;
     width: 50%;
-    border-radius: 20px;
+    margin: 0 20px;
+    border-radius: 15px;
 }
 
 .main-article-section h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
     text-align: center;
-    font-size: 24px;
 }
 
 .main-article-section p {
     text-align: center;
-    line-height: 1.6;
-    margin: 0;
-    font-size: 15px;
+    line-height: 1.5;
 }
 
 /* 4. Pictorial News: class, alignment, and properties as appropriate */
 .pictorial-news-section {
     background-color: #ffffff;
-    padding: 20px 25px 30px 25px;
+    padding: 20px;
+    flex-basis: 25%;
     width: 25%;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .pictorial-news-section h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 20px;
+    text-align: center;
 }
 
 .pictorial-news-section img {
     width: 100%;
     margin-bottom: 20px;
-    display: block;
+    display: inline-block;
 }
 
 .pictorial-news-section img:last-child {
