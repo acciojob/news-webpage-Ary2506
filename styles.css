@@ -8,84 +8,103 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* 2. Header with class .header, alignment, padding, and color */
+/* 2. Header alignment, padding and color */
 .header {
-    text-align: center;
     background-color: #011e29;
     padding: 30px;
+    text-align: center;
     color: white;
 }
 
 .header h2 {
     margin: 0;
+    text-align: center;
+    font-size: 32px;
 }
 
-/* Container for Flexbox layout */
 .container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: flex-start; /* Crucial: prevents height stretching to match target image */
     padding: 40px;
+    gap: 30px; /* Elegant gap between columns */
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* 3. Latest News Section with specified class, color, padding, and width */
+/* 3. Latest News: class, provided color, padding, and width */
 .latest-news-section {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 20px 25px 30px 25px;
     width: 25%;
-    border-radius: 15px;
+    border-radius: 20px;
+    text-align: center; /* Centers h3 and centers the inline-block ul */
 }
 
 .latest-news-section h3 {
-    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .latest-news-section ul {
-    list-style-position: inside;
-    padding: 0;
+    display: inline-block; /* Centered relative to the card */
+    text-align: left; /* Left-aligns bullets and text inside the block */
+    padding-left: 20px;
+    margin: 0;
 }
 
 .latest-news-section li {
-    margin-bottom: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.4;
 }
 
-/* Main content styling to match layout */
+.latest-news-section li:last-child {
+    margin-bottom: 0;
+}
+
+/* Main content styling */
 .main-article-section {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 20px 30px 30px 30px;
     width: 50%;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .main-article-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
     text-align: center;
+    font-size: 24px;
 }
 
 .main-article-section p {
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
 }
 
-/* 4. Pictorial News Section with specified class, alignment, and properties */
+/* 4. Pictorial News: class, alignment, and properties as appropriate */
 .pictorial-news-section {
-    text-align: center;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 20px 25px 30px 25px;
     width: 25%;
-    border-radius: 15px;
+    text-align: center;
+    border-radius: 20px;
 }
 
 .pictorial-news-section h3 {
-    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
-/* Image styling for Pictorial news */
 .pictorial-news-section img {
     width: 100%;
-    margin-bottom: 15px;
-    display: inline-block;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .pictorial-news-section img:last-child {
