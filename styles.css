@@ -16,6 +16,9 @@ body {
     text-align: center;
     padding: 20px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Flexbox layout container */
@@ -72,6 +75,10 @@ body {
     width: 25%;
     text-align: center;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pictorial-news-section h3 {
