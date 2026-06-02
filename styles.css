@@ -71,12 +71,12 @@ body {
 
 /* Criterion 4: .pictorial-news-section - background-color, padding, width, text-align, border-radius */
 .pictorial-news-section {
-    background-color: #ffffff;
-    padding: 20px;
-    width: 25%;
-    text-align: center;
-    border-radius: 10px;
-    display: flex;
+    background-color: #ffffff;  /* background-color */
+    padding: 20px;              /* padding */
+    width: 25%;                 /* width */
+    text-align: center;         /* text-align */
+    border-radius: 10px;        /* border-radius */
+    display: flex;              /* flex layout centering */
     flex-direction: column;
     justify-content: center;
     align-items: center;
