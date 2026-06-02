@@ -14,7 +14,7 @@ body {
 .header {
     background-color: #011e29;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     color: white;
 }
 
@@ -83,9 +83,17 @@ body {
 .pictorial-news-section img {
     width: 100%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
 }
 
-.pictorial-news-section img:last-child {
+.pictorial-news-section p {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.pictorial-news-section p:last-child {
     margin-bottom: 0;
 }
