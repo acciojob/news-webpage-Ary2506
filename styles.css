@@ -18,17 +18,11 @@ body {
 }
 
 /* Criterion 2: Header - class .header, center alignment, padding, background color */
-.header, header {
+.header {
     background-color: #011e29;
-    background-color: var(--header-background-color);
-    background: #011e29;
     text-align: center;
     padding: 25px;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Flexbox layout container */
@@ -79,17 +73,12 @@ body {
 }
 
 /* Criterion 4: .pictorial-news-section - background-color, padding, width, text-align, border-radius */
-.pictorial-news-section, div.pictorial-news-section {
+.pictorial-news-section {
     background-color: #ffffff;
-    background: #ffffff;
     padding: 20px;
     width: 25%;
     text-align: center;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 .pictorial-news-section h3 {
@@ -100,10 +89,8 @@ body {
 
 .pictorial-news-section img {
     width: 100%;
-    max-width: 100%;
     height: auto;
-    object-fit: cover;
-    display: inline-block;
+    display: block;
     margin: 0 auto 10px auto;
 }
 
