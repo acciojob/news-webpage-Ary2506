@@ -4,16 +4,9 @@
     padding: 0;
 }
 
-:root {
-    --header-background-color: #011e29;
-    --body-background-color: #f5f5f5;
-}
-
 /* Criterion 5: Apply body background color */
 body {
     background-color: #f5f5f5;
-    background-color: var(--body-background-color);
-    background: #f5f5f5;
     font-family: Arial, sans-serif;
 }
 
@@ -90,8 +83,7 @@ body {
 .pictorial-news-section img {
     width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto 10px auto;
+    margin-bottom: 10px;
 }
 
 .pictorial-news-section img:last-child {
