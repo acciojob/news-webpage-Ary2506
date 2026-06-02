@@ -1,91 +1,69 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Criterion 5: Apply body background color */
+/* Body Styling */
 body {
-    background-color: #f5f5f5;
+    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
-/* Criterion 2: Header - class .header, center alignment, padding, background color */
+/* Header */
 .header {
     background-color: #011e29;
-    text-align: center;
-    padding: 25px;
     color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-/* Flexbox layout container */
+/* Main Container */
 .container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
+    justify-content: space-around;
+    margin: 20px;
 }
 
-/* Criterion 3: .latest-news-section - background color, padding, width */
+/* Latest News Section */
 .latest-news-section {
-    background-color: #ffffff;
-    padding: 20px;
-    width: 25%;
+    background-color: white;
+    padding: 15px;
+    width: 30%;
     border-radius: 10px;
 }
 
 .latest-news-section h3 {
-    margin-bottom: 15px;
-    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .latest-news-section ul {
-    padding-left: 25px;
+    padding-left: 20px;
 }
 
-.latest-news-section ul li {
+.latest-news-section li {
     margin-bottom: 8px;
 }
 
-/* Main Article */
-.main-article-section {
-    background-color: #ffffff;
-    padding: 20px;
-    width: 45%;
+/* Main News */
+.main-news {
+    width: 30%;
+    background-color: white;
+    padding: 15px;
     border-radius: 10px;
-    text-align: center;
 }
 
-.main-article-section h2 {
-    margin-bottom: 15px;
+.main-news img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.main-article-section p {
-    line-height: 1.6;
-}
-
-/* Criterion 4: .pictorial-news-section - background-color, padding, width, text-align, border-radius */
+/* Pictorial News Section */
 .pictorial-news-section {
-    background-color: #ffffff;
-    padding: 20px;
-    width: 25%;
+    background-color: white;
+    padding: 15px;
+    width: 30%;
     text-align: center;
     border-radius: 10px;
-}
-
-.pictorial-news-section h3 {
-    margin-bottom: 12px;
-    font-weight: bold;
 }
 
 .pictorial-news-section img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
     margin-bottom: 10px;
-}
-
-.pictorial-news-section img:last-child {
-    margin-bottom: 0;
+    border-radius: 10px;
 }
